@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Title</title>
+</head>
+
+<style>
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 118, 162);
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.raindrop{
+    position: absolute;
+    width:2px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+
+    animation-name: fall;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fall{ 
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(110vh)
+    }}
+    .mainmenu{
+        display: inline-block;
+        color: white;
+        bottom: 200px;
+        position: absolute;
+        bottom: 30px;
+    }
+</style>
+
+<body>
+    <div id = "container"></div>
+
+   <a class="mainmenu" href="index.html">
+        메인메뉴로 돌아가기 ▼
+    </a>
+
+    <script type="module" src="./src/24.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Title</title>
+</head>
+
+<style>
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.star{
+    font-size: 50px;
+    color: #ccc;
+    user-select: none;
+}
+.star.filled{
+    color:gold;
+}
+
+.mainmenu{
+        display: inline-block;
+        margin-top: 200px;
+    }
+</style>
+
+<body> 
+  <h2>재밌으셨나요? 별점을 매겨주세요!</h2>
+  <div class="star-container">
+    <span class = "star">★</span>
+    <span class = "star">★</span>
+    <span class = "star">★</span>
+    <span class = "star">★</span>
+    <span class = "star">★</span>
+  </div>
+
+   <a class="mainmenu" href="index.html">
+        메인메뉴로 돌아가기 ▼
+    </a>
+
+    <script type="module" src="./src/22.js"></script>
+</body>
+
+</html>

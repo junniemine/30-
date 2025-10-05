@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Title</title>
+</head>
+
+<style>
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+    .mainmenu{
+        display: inline-block;
+    }
+#drum.playing{
+border-color: gold;
+
+}
+    #drum{
+        margin: 200px;
+        border-radius: 50%;
+        background-color: black;
+        width: 17vw;
+        height: 13vh;
+        text-align: center;
+        color: white;
+        justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 5px solid black;
+    transition: all 0.05s ease;
+    
+
+    }
+</style>
+
+<body> 
+    <div id = "drum">DRUM</div>
+    <audio id = "sound" src = "sounds/북소리B.wav"></audio>
+    
+   <a class="mainmenu" href="index.html">
+        메인메뉴로 돌아가기 ▼
+    </a>
+
+    <script type="module" src="./src/26.js"></script>
+</body>
+
+</html>

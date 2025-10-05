@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Title</title>
+</head>
+
+<style>
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #222;
+    overflow: hidden;
+    text-align: center; 
+}
+.mainmenu{
+        display: inline-block;
+        color: white
+    }
+
+.ripple{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+
+    transform: translate(-50%, -50%);
+    animation: ripple-effect 0.5s linear;
+
+}
+
+@keyframes ripple-effect {
+    from{
+        width:0;
+        height: 0;
+        opacity: 0.5;
+    }
+    to{
+        width:300px;
+        height:300px;
+        opacity:0;
+    }
+}
+</style>
+
+<body> 
+   <a class="mainmenu" href="index.html">
+        메인메뉴로 돌아가기 ▼
+    </a>
+    <script type="module" src="./src/21.js"></script>
+</body>
+
+</html>

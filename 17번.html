@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Title</title>
+</head>
+
+<style>
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#typing{
+    border-right: 2px solid black;
+    animation: blink 0.5s infinite;
+    margin-bottom: 200px
+}
+    .mainmenu{
+        display: inline-block;
+    }
+#button{
+    margin-bottom: 200px;
+}
+</style>
+
+<body> 
+   <button id = "button">타이핑 시작!</button>
+   <div id="typing"></div>
+   <a class="mainmenu" href="index.html">
+        메인메뉴로 돌아가기 ▼
+    </a>
+
+    <script type="module" src="./src/17.js"></script>
+</body>
+
+</html>

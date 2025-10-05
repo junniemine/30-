@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Title</title>
+</head>
+
+<style>
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    #todo-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 11vh;
+        width:17vh;
+        flex-direction: column;
+    }
+ 
+    .mainmenu{
+        display: inline-block;
+    }
+    .completed{
+        text-decoration: Line-through;
+        color: black
+    }
+
+</style>
+
+<body> 
+  <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="새로운 할 일을 입력하세요...">
+        <button id="submit">추가</button>
+
+    <ul id="todo-list"></ul>
+
+   <a class="mainmenu" href="index.html">
+        메인메뉴로 돌아가기 ▼
+    </a>
+
+    <script type="module" src="./src/18.js"></script>
+</body>
+
+</html>
